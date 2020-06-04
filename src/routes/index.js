@@ -15,5 +15,9 @@ module.exports = function({HomeRoutes}){
     use(compression());
 
 
-    apiRoutes.use('/home', HomeRoutes)
+    apiRoutes.use("/home", HomeRoutes);
+
+    router.use("/v1/api", apiRoutes);
+
+    return router;
 }
