@@ -16,7 +16,7 @@ class Server {
     start(){
         return new Promise(resolve =>{
             _express.listen(_config.PORT, () => {
-                console.log(_config.APPLICATION_NAME + "Server is running on Port:" + _config.PORT);
+                console.log(_config.APPLICATION_NAME + " Server is running on Port: " + _config.PORT);
 
                 resolve();
             })
